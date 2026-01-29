@@ -145,7 +145,7 @@
   <div class="image-scroller">
     <h3>Recipes</h3>
 
-    <!-- Image 1 -->
+    <!-- Image 1 -->Spicy-Pasta-recipe-optimised-scaled.webp
     <div class="recipe-image">
       <a href="pasta.html">
         <img src="images/pasta.jpg" alt="Pasta Recipe">
@@ -154,14 +154,14 @@
 
     <!-- Image 2 -->
     <div class="recipe-image">
-      <a href="cake.html">
+      <a href="cesear salad.html">
         <img src="images/cake.jpg" alt="Cake Recipe">
       </a>
     </div>
 
     <!-- Image 3 -->
     <div class="recipe-image">
-      <a href="salad.html">
+      <a href="burger.html">
         <img src="images/salad.jpg" alt="Salad Recipe">
       </a>
     </div>
