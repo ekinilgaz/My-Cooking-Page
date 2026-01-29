@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ekin's Cooking Guide</title>
+
+  <!-- ===== STYLE SECTION ===== -->
+  <style>
+    :root {
+      --baby-green: #cfe8dc;
+      --beige: #f5f1e8;
+      --dark-green: #5f8f7e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--beige);
+      color: #333;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* ===== LEFT CONTENT ===== */
+    .content {
+      width: 65%;
+      padding: 60px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: var(--dark-green);
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #4a6f63;
+    }
+
+    p {
+      line-height: 1.7;
+      max-width: 600px;
+    }
+
+    /* Editable info box */
+    .editable {
+      background: white;
+      padding: 20px;
+      border-left: 6px solid var(--baby-green);
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    /* ===== RIGHT IMAGE SCROLLER ===== */
+    .image-scroller {
+      width: 35%;
+      background-color: var(--baby-green);
+      padding: 20px;
+      overflow-y: auto;
+      animation: slideIn 1.5s ease;
+    }
+
+    .image-scroller h3 {
+      text-align: center;
+      color: var(--dark-green);
+      margin-bottom: 20px;
+    }
+
+    .recipe-image {
+      margin-bottom: 25px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .recipe-image img {
+      width: 100%;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .recipe-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Scrollbar styling */
+    .image-scroller::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .image-scroller::-webkit-scrollbar-thumb {
+      background: #9bc6b5;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== LEFT SIDE ===== -->
+  <div class="content">
+    <h1>Ekin's Cooking Guide</h1>
+
+    <p>
+      Welcome to my personal cooking space where I share comforting,
+      beautiful, and delicious recipes made with love.
+    </p>
+
+    <div class="editable">
+      <!-- ✏️ EDIT THIS SECTION LATER -->
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Ekin. I love cooking simple yet elegant meals and experimenting
+        with flavors. This website is where I collect my favorite recipes.
+      </p>
+    </div>
+
+    <div class="editable">
+      <!-- ✏️ EDIT THIS SECTION LATER -->
+      <h2>Cooking Style</h2>
+      <p>
+        Seasonal ingredients, cozy meals, and aesthetic plating.
+        Easy to follow recipes for everyday cooking.
+      </p>
+    </div>
+  </div>
+
+  <!-- ===== RIGHT SIDE SCROLLING IMAGES ===== -->
+  <div class="image-scroller">
+    <h3>Recipes</h3>
+
+    <!-- Image 1 -->
+    <div class="recipe-image">
+      <a href="pasta.html">
+        <img src="images/pasta.jpg" alt="Pasta Recipe">
+      </a>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="recipe-image">
+      <a href="cake.html">
+        <img src="images/cake.jpg" alt="Cake Recipe">
+      </a>
+    </div>
+
+    <!-- Image 3 -->
+    <div class="recipe-image">
+      <a href="salad.html">
+        <img src="images/salad.jpg" alt="Salad Recipe">
+      </a>
+    </div>
+
+    <!-- ➕ Add more images here -->
+  </div>
+
+</body>
+</html>
+
